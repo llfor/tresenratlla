@@ -1,0 +1,69 @@
+:root{
+    --color-primari: rgb(66, 73, 73); 
+    --line-style: 10px solid var(--color-primari);
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    user-select: none;
+    background-color: chocolate;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-family);
+    color: var(--color-primari);
+
+}
+#graella{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+
+}
+.quadrat{
+    color: var(--color-primari);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: bold;
+    background-color: beige;
+}
+.dalt{
+    border-bottom: var(--line-style);
+}
+.baix{
+    border-top: var(--line-style);
+
+}
+.centre{
+    border-left: var(--line-style);
+    border-right: var(--line-style);
+
+}
+.guanyador{
+    color:blueviolet;
+}
+dialog{
+    text-align: center;
+    min-width: 50vw;
+    background-color: rgba(240,248,255,0.73);
+    padding: 5rem;
+    border: unset;
+    border-radius: 10px;
+
+}
+dialog h2{
+    font-family: var(--font-family);
+    font-size: xx-large;
+
+}
+dialog button{
+    padding: 1rem;
+    font-size: larger;
+}
+dialog::backdrop{
+    backdrop-filter: blur(3px);
+}
